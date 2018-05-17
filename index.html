@@ -123,8 +123,8 @@
           </div>
           <form class="ui-form" action="index.html" method="post">
             <input class="ui-input" type="text" name="" value="" placeholder="Имя">
-            <input class="ui-input" type="text" name="" value="" placeholder="Телефон">
-            <button class="btn-form" type="button" name="button">Жду звонка</button>
+            <input id="phone-1" class="ui-input phone" type="tel" name="" value="" placeholder="Телефон">
+            <button class="btn-form" type="submit" name="button">Жду звонка</button>
           </form>
         </div>
       </div>
@@ -157,16 +157,40 @@
               </div>
             </div>
             <div key-panel="2" class="tabbed-pane__panel">
-              2222
+              <div class="tabbed-pane__title">
+                Хмель
+              </div>
+              <div class="tabbed-pane__content">
+                <p>Мы изготавливаем столярные изделия различной сложности из любых пород дерева.</p>
+                <p>Специалисты нашего цеха изготовят для Вас широкий ...</p>
+              </div>
             </div>
             <div key-panel="3" class="tabbed-pane__panel">
-              3333
+              <div class="tabbed-pane__title">
+                Буд
+              </div>
+              <div class="tabbed-pane__content">
+                <p>Мы изготавливаем столярные изделия различной сложности из любых пород дерева.</p>
+                <p>Специалисты нашего цеха изготовят для Вас широкий ...</p>
+              </div>
             </div>
             <div key-panel="4" class="tabbed-pane__panel">
-              4444
+              <div class="tabbed-pane__title">
+                Гуд
+              </div>
+              <div class="tabbed-pane__content">
+                <p>Мы изготавливаем столярные изделия различной сложности из любых пород дерева.</p>
+                <p>Специалисты нашего цеха изготовят для Вас широкий ...</p>
+              </div>
             </div>
             <div key-panel="5" class="tabbed-pane__panel">
-              5555
+              <div class="tabbed-pane__title">
+                Бревно
+              </div>
+              <div class="tabbed-pane__content">
+                <p>Мы изготавливаем столярные изделия различной сложности из любых пород дерева.</p>
+                <p>Специалисты нашего цеха изготовят для Вас широкий ...</p>
+              </div>
             </div>
           </div>
         </div>
@@ -237,7 +261,48 @@
     </section>
     <!-- END instruction -->
 
-    <!-- <section class="gallery"></section> -->
+    <section class="gallery">
+
+      <div class="container">
+        <div class="tabbed-pane">
+          <ul class="tabbed-pane__tabs">
+            <li key-tab="1" class="tabbed-pane__tab">Что это такое вообще?!!!!</li>
+            <li key-tab="2" class="tabbed-pane__tab">Что это такое вообще?!!!!</li>
+            <li key-tab="3" class="tabbed-pane__tab">Что это такое вообще?!!!!</li>
+            <li key-tab="4" class="tabbed-pane__tab">Что это такое вообще?!!!!</li>
+            <li key-tab="5" class="tabbed-pane__tab">Что это такое вообще?!!!!</li>
+          </ul>
+          <div class="tabbed-pane__panels">
+            <div key-panel="1" class="tabbed-pane__panel">
+              <div class="tabbed-pane__img"><img src="./img/gallery-1.png" alt=""></div>
+              <div class="tabbed-pane__img"><img src="./img/gallery-2.png" alt=""></div>
+              <div class="tabbed-pane__img"><img src="./img/gallery-3.png" alt=""></div>
+            </div>
+            <div key-panel="2" class="tabbed-pane__panel">
+              <div class="tabbed-pane__img"><img src="./img/gallery-1.png" alt=""></div>
+              <div class="tabbed-pane__img"><img src="./img/gallery-3.png" alt=""></div>
+              <div class="tabbed-pane__img"><img src="./img/gallery-2.png" alt=""></div>
+            </div>
+            <div key-panel="3" class="tabbed-pane__panel">
+              <div class="tabbed-pane__img"><img src="./img/gallery-2.png" alt=""></div>
+              <div class="tabbed-pane__img"><img src="./img/gallery-1.png" alt=""></div>
+              <div class="tabbed-pane__img"><img src="./img/gallery-3.png" alt=""></div>
+            </div>
+            <div key-panel="4" class="tabbed-pane__panel">
+              <div class="tabbed-pane__img"><img src="./img/gallery-2.png" alt=""></div>
+              <div class="tabbed-pane__img"><img src="./img/gallery-3.png" alt=""></div>
+              <div class="tabbed-pane__img"><img src="./img/gallery-1.png" alt=""></div>
+            </div>
+            <div key-panel="5" class="tabbed-pane__panel">
+              <div class="tabbed-pane__img"><img src="./img/gallery-3.png" alt=""></div>
+              <div class="tabbed-pane__img"><img src="./img/gallery-2.png" alt=""></div>
+              <div class="tabbed-pane__img"><img src="./img/gallery-1.png" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
 
     <section class="guarantee">
       <span class="guarantee__text">
@@ -250,6 +315,7 @@
 
   </footer>
 
+  <script type="text/javascript" src="./js/iMask.js"></script>
   <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
