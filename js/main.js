@@ -56,13 +56,11 @@
 
 (function() {
 
-  var phone1 = document.getElementById('phone-1'),
-      phone2 = document.getElementById('phone-2');
+  var phone1 = document.getElementById('phone-1');
 
   var maskOptions = {
     mask: '+{7}(000)000-00-00'
   };
-  var maskPhone1 = new IMask(phone1, maskOptions),
-      maskPhone2 = new IMask(phone2, maskOptions);
+  var maskPhone1 = new IMask(phone1, maskOptions);
 
 })()

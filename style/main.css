@@ -301,6 +301,10 @@ a {
 
 .materials .tabbed-pane {
   margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 920px;
 }
 
 .materials .tabbed-pane__tabs {
