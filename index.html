@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="./style/fonts.css">
   <link rel="stylesheet" href="./style/main.css">
   <link rel="stylesheet" href="./style/media.css">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
 </head>
 <body>
   <div class="wrapper">
@@ -314,10 +316,35 @@
     </section>
     <!-- END guarantee -->
 
+    <!-- guarantee -->
+    <section class="contact">
+      <div class="container">
+        <div class="contact__form">
+
+          <p class="contact__text">
+            Остались вопросы ?
+          </p>
+
+          <form class="ui-form" action="index.html" method="post">
+            <input class="ui-input" type="text" name="" value="" placeholder="Имя">
+            <input id="phone-2" class="ui-input phone" type="tel" name="" value="" placeholder="Телефон">
+            <button class="btn-form" type="submit" name="button">Жду звонка</button>
+          </form>
+        </div>
+
+      </div>
+      <div class="contact__map">
+        <div id="map" style="width: 100%; height: 100%"></div>
+      </div>
+    </section>
+    <!-- END guarantee -->
+
   </div>
-  <footer class="footer"></footer>
 
   <script type="text/javascript" src="./js/iMask.js"></script>
   <script type="text/javascript" src="./js/main.js"></script>
+  <script type="text/javascript">
+
+  </script>
 </body>
 </html>

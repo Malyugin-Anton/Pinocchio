@@ -56,11 +56,45 @@
 
 (function() {
 
-  var phone1 = document.getElementById('phone-1');
+  var phone1 = document.getElementById('phone-1'),
+      phone2 = document.getElementById('phone-2');
 
   var maskOptions = {
     mask: '+{7}(000)000-00-00'
   };
   var maskPhone1 = new IMask(phone1, maskOptions);
+  var maskPhone2 = new IMask(phone2, maskOptions);
 
+})();
+
+//яндекс карты
+(function() {
+
+  ymaps.ready(init);
+
+  function init(){
+
+    var myMap = new ymaps.Map("map", {
+        center: [50, 30],
+        zoom: 5,
+        controls: []
+    });
+
+    myPlacemark = new ymaps.Placemark(
+      [50, 30],
+      {
+        hintContent: 'Город',
+        balloonContent: 'ПИНОКИО!!!!'
+      },
+      {
+        iconLayout: 'default#image',
+        // iconImageHref: 'img/icon/marker.png',
+        iconImageSize: [42, 59],
+        iconImageOffset: [-3, -59]
+    });
+
+    // myMap.behaviors.disable(['scrollZoom']);
+
+    myMap.geoObjects.add(myPlacemark);
+  }
 })()

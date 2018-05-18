@@ -469,4 +469,26 @@ a {
   margin-right: 10px;
 }
 
+.contact {
+  background: #56534f;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.contact__text {
+  font-size: 1.688rem;
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: 'open_sansbold';
+}
+
+.contact__map {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+
 /* END SECTIONS */
