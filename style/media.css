@@ -72,8 +72,18 @@
 }
 
 @media screen and (max-width: 768px) {
-  .nav {
+
+  .nav__list {
     display: none;
+  }
+
+  .btn-open {
+    display: block;
+  }
+
+  .nav__inner {
+    align-items: center;
+    justify-content: space-between;
   }
 
   .header__box {

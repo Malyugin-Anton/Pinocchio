@@ -1,3 +1,19 @@
+// mobile-menu
+(function() {
+
+  var btn = document.querySelector('a.btn-open'),
+      navMobile = document.querySelector('.nav__mobile')
+
+  function toggleMenu(e) {
+    e.preventDefault();
+    this.classList.toggle('open')
+    navMobile.classList.toggle('nav__mobile_open')
+  }
+
+  btn.addEventListener("click", toggleMenu);
+
+})();
+
 // materials TABS
 (function() {
   var tabs = document.querySelectorAll('.materials .tabbed-pane__tab'),
