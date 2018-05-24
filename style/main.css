@@ -451,6 +451,49 @@ a {
   opacity: 1;
 }
 
+.materials .accordion {
+  display: none;
+  margin-top: 10px;
+}
+
+.materials .accordion__item {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.materials .accordion__title {
+  text-align: center;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.materials .accordion__title::before {
+  content: "";
+  display: inline-block;
+  background: url(../img/wood_icon.png) no-repeat;
+  background-size: cover;
+  width: 16px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+.materials .accordion__item_active .accordion__content {
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+  padding: 15px 0;
+}
+
+.materials .accordion__content {
+  display: block;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+
 .instruction {
   padding: 60px 0 0 0;
   background: #fff;

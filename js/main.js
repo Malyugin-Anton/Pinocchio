@@ -1,3 +1,22 @@
+// accordion
+(function() {
+
+  var btn = document.querySelectorAll('.accordion__item');
+
+  function toggleItem(e) {
+    e.preventDefault();
+    btn.forEach(function(item) {
+      item.classList.remove('accordion__item_active');
+    })
+    this.classList.toggle('accordion__item_active');
+  }
+
+  btn.forEach(function(item) {
+    item.addEventListener("click", toggleItem);
+  })
+
+})();
+
 // mobile-menu
 (function() {
 
