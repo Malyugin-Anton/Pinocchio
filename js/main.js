@@ -1,7 +1,7 @@
 // accordion
 (function() {
 
-  var btn = document.querySelectorAll('.accordion__item');
+  var btn = document.querySelectorAll('.materials .accordion__item');
 
   function toggleItem(e) {
     e.preventDefault();
@@ -9,6 +9,27 @@
       item.classList.remove('accordion__item_active');
     })
     this.classList.toggle('accordion__item_active');
+  }
+
+  btn.forEach(function(item) {
+    item.addEventListener("click", toggleItem);
+  })
+
+})();
+
+// accordion
+(function() {
+
+  var btn = document.querySelectorAll('.gallery .accordion__item');
+
+  btn[0].classList.add('accordion__item_active');
+
+  function toggleItem(e) {
+    e.preventDefault();
+    btn.forEach(function(item) {
+      item.classList.remove('accordion__item_active');
+    })
+    this.classList.add('accordion__item_active');
   }
 
   btn.forEach(function(item) {
