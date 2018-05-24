@@ -49,10 +49,6 @@
     margin: 0 2.6% 60px 2.6%;
   }
 
-  .gallery .tabbed-pane__img:nth-child(3) {
-    display: none;
-  }
-
   .contact {
     display: flex;
     flex-direction: column;
@@ -106,15 +102,11 @@
   }
 
   .gallery .tabbed-pane__tabs {
-    flex-basis: 40%;
+    width: 40%;
   }
 
   .gallery .tabbed-pane__panels {
-    flex-basis: 60%;
-  }
-
-  .gallery .tabbed-pane__img:nth-child(2) {
-    display: none;
+    width: 60%;
   }
 
   .guarantee__text {

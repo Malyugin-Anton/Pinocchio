@@ -1,3 +1,37 @@
+//gallery
+(function() {
+  $(document).ready(function(){
+    $('.gallery .tabbed-pane__panel').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+
+    $('.gallery .accordion__content').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false
+    });
+
+  });
+})();
+
 // accordion
 (function() {
 

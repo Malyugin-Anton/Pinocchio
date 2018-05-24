@@ -521,11 +521,19 @@ a {
 }
 
 .gallery .tabbed-pane {
-  display: flex;
+  /* display: flex; */
+}
+
+.gallery .tabbed-pane:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 .gallery .tabbed-pane__tabs {
-  flex-basis: 25%;
+  float: left;
+  width: 25%;
+  display: inline-block;
 }
 
 .gallery .tabbed-pane__tab {
@@ -542,7 +550,8 @@ a {
 }
 
 .gallery .tabbed-pane__panels {
-  flex-basis: 75%;
+  width: 75%;
+  display: inline-block;
 }
 
 .gallery .tabbed-pane__panel {
@@ -557,7 +566,6 @@ a {
 }
 
 .gallery .tabbed-pane__panel_active {
-  /* display: flex; */
   opacity: 1;
   visibility: visible;
   height: auto;
@@ -565,7 +573,6 @@ a {
 }
 
 .gallery .tabbed-pane__img {
-  flex-grow: 1;
   margin: 0 15px;
 }
 
